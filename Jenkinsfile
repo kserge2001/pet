@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -Dspring-boot.run.skip-docker-compose'
+                sh 'mvn test -Dspring-boot.run.skip-docker-compose=true'
             }
         }
         stage('trivy scan') {
