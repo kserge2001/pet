@@ -12,6 +12,8 @@ pipeline {
         }
         stage('Test') {
             steps {
+                // the test is failling how can I stop it from failing
+                  
                 sh 'mvn test'
             }
         }
